@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface Zero 2.0</title>
+    <link rel="icon" href="images/logo.png" />
+    <link href="css/general.css" rel="stylesheet" />
+  </head>
+  <body onload="transitionIn()">
+    <img id="backgroundImg" src="images/background.jpg" alt="backgroundImg" />
+    <div id="backgroundLeft">
+      <img id="logo" src="images/logo.png" alt="logo" />
+    </div>
+    <div id="backgroundLeft2"></div>
+    <div id="backgroundRight">
+      <img id="fleche" src="images/fleche.png" alt="fleche" />
+      <div id="menu1" onclick="transitionOut(1)">
+        <h1>Carte</h1>
+      </div>
+      <div id="menu2" onclick="transitionOut(2)">
+        <h1>Texte Anim</h1>
+      </div>
+    </div>
+    <div id="backgroundRight2"></div>
+    <img id="carte" src="images/carte.png" alt="carte" />
+    <h1 id="title1">Insertion</h1>
+    <textarea id="write"></textarea>
+    <img
+      id="writeSave"
+      src="images/fleche2.png"
+      alt="fleche"
+      onclick="display()"
+    />
+    <h1 id="title2">Prévisualition</h1>
+    <textarea id="previsual"></textarea>
+    <h1 id="title3" onclick="textAnim()">Lancer</h1>
+    <p id="displayText">bonsoir</p>
+  </body>
+  <script src="js/general.js"></script>
+</html>
