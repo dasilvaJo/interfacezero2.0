@@ -97,7 +97,7 @@ function display2() {
     if (i < text.length) {
       display2();
     }
-  }, 300);
+  }, 100);
 }
 
 function display3() {
@@ -115,7 +115,7 @@ function display4() {
     if (i < text.length) {
       display4();
     }
-  }, 500);
+  }, 300);
 }
 
 function textAnim() {
