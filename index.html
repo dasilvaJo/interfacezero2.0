@@ -33,9 +33,30 @@
       onclick="display()"
     />
     <h1 id="title2">Prévisualition</h1>
+    <img
+      id="settings"
+      src="images/settings.png"
+      alt="settings"
+      onclick="openSettings()"
+    />
     <textarea id="previsual"></textarea>
     <h1 id="title3" onclick="textAnim()">Lancer</h1>
-    <p id="displayText">bonsoir</p>
+    <p id="displayText"></p>
+    <div id="settingsPage">
+      <h1>Paramètres</h1>
+      <h3>Fermer</h3>
+      <h2>Fond</h2>
+      <h2>Couleur Texte</h2>
+      <div>
+        <input type="color" id="textColor" name="textColor" value="white" />
+        <label for="textColor">Choisir</label>
+      </div>
+      <h2>Police Texte</h2>
+      <h2>Taille Texte</h2>
+      <p id="textSize">Exemple</p>
+      <button onclick="changeSize(1)">+</button>
+      <button onclick="changeSize(2)">-</button>
+    </div>
   </body>
   <script src="js/general.js"></script>
 </html>

@@ -65,6 +65,9 @@ function transitionOut(value) {
     document.getElementById("title3").style["animation"] =
       "1s ease scaleIn both";
     document.getElementById("title3").style["animation-delay"] = "2.5s";
+    document.getElementById("settings").style["animation"] =
+      "1s ease scaleIn both";
+    document.getElementById("settings").style["animation-delay"] = "2.5s";
   }
 }
 
@@ -148,4 +151,23 @@ function textAnim() {
     "2s ease scaleIn both";
   document.getElementById("displayText").style["animation-delay"] = "1s";
   display3();
+}
+
+function openSettings() {
+  document.getElementById("settingsPage").style["animation"] =
+    "1s ease scaleIn both";
+}
+
+function changeSize(value) {
+  if (value == 1) {
+    var el = document.getElementById("textSize");
+    var style = window.getComputedStyle(el, null).getPropertyValue("font-size");
+    var fontSize = parseFloat(style);
+    el.style.fontSize = fontSize + 2 + "px";
+  } else if (value == 2) {
+    var el = document.getElementById("textSize");
+    var style = window.getComputedStyle(el, null).getPropertyValue("font-size");
+    var fontSize = parseFloat(style);
+    el.style.fontSize = fontSize - 2 + "px";
+  }
 }

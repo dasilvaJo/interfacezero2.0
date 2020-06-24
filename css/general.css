@@ -213,6 +213,28 @@ body {
   visibility: hidden;
 }
 
+#settings {
+  position: fixed;
+  z-index: 2;
+  width: 4%;
+  left: 92%;
+  top: 4%;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#settingsPage {
+  position: fixed;
+  z-index: 3;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background: #101820;
+  border: 2px solid white;
+  visibility: hidden;
+}
+
 @keyframes leftToRight {
   from {
     transform: translateX(-100%);
